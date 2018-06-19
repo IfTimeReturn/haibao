@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/shezhi.png",
+        "iconPath": "images/shezhi.png",
+        "pagePath": "pages/index/index",
+        "text": "资讯"
+      },
+      {
+        "selectedIconPath": "images/shezhi.png",
+        "iconPath": "images/shezhi.png",
+        "pagePath": "pages/index/index",
+        "text": "社区"
+      },
+      {
+        "selectedIconPath": "images/shezhi.png",
+        "iconPath": "images/shezhi.png",
+        "pagePath": "pages/logs/logs",
+        "text": "我的"
+      }
+    ]
+  }
+
+}

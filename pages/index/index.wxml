@@ -1,0 +1,122 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='top-view'>
+        <view class="search-box">
+        <input type="text" placeholder="请输入您要搜索的内容" class="search-content"/><image src="../../images/search-b.png" class="search-button"/>
+    </view>
+    <view class="xiaoketang">
+        <image src='../../images/xiaoketang.png' class="xiaoketang-img"></image>
+        <view class="xiaoketang-right">
+          <view class='new'>NEW</view>
+          <view class='h1'>海豹小课堂</view>
+          <view class='detail'>查看你的财务</view>
+          <view class="more">点击查看</view>
+        </view>
+    </view>
+    </view>
+    <view class='fenge-10'></view>
+    <view class='question'>
+        <view class='question-header'>
+            <view class='header-left'>
+                <view class='header-left-title'>有问必答  |</view>
+                <view class='header-left-detail'>有啥理财困惑，来找海豹们帮忙解答吧</view>
+            </view>
+            <image src="../../images/qudati.png" class="qudati"></image>
+        </view>
+        <view class='publish-question'>
+            <input type="text" placeholder="请输入您的问题" class='publish-qusetion-content' /><input type="button" value="提交" class='tijiao' />
+        </view>
+    </view>
+    <view wx:for="{{array}}" class='question-item'wx:key="index">
+        <view class='question-title'>Q: {{index}}</view>
+        <view class='question-anwser'>{{item.message}}</view>
+        <view class='question-user-info'>
+          <view class='userInfo-left'>
+            <image src='../../images/shoucang-.png' class="touxiang"></image>
+            <view class="userInfo-left-content">
+                <text class="userName">Metry</text>
+                <text class="time">5个月前</text>                
+            </view>
+          </view>
+          <view class='userInfo-right'>
+            <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"/><text>50</text></view>
+            <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"/><text>50</text></view>
+            <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"/><text>50</text></view>            
+          </view>
+        </view>
+    </view>
+    <view class="see-allQuestion">查看全部问题<image src="../../images/sanjiao.png" class="sanjiao"></image></view>
+    <view class="fenge-10"></view>
+    <view class="topic">
+        <view class="topic-header">话题精选  |</view>
+        <view class="topic-item">
+            <view class="topic-item-header">
+                <view class="userInfo-left">
+                    <image class="touxiang" src="../../images/shoucang-.png"></image>
+                    <view class="userInfo-left-content">
+                        <text class="userName">Metry</text>
+                        <text class="time">5个月前</text> 
+                    </view>
+                </view>
+                <view class="header-right">
+                    <image src="../../images/jing.png" class="jing"/>
+                    <image src="../../images/weiguanzhu.png" class="guanzhu"/>
+                </view>
+            </view>
+            <view class="topic-title">坚持就是胜利</view>
+            <view class="topic-content">我开始基金定投是2013年9月，那时候工作刚刚开始稳定，然后开始研究理财，首先接触的是定存和基金定投。然后去银行柜台欠了合约，那时候还要去柜台签，现在不要了。每月定投500坚持到现在，2014年底买车清零过一次，定投继续。当然这是我的第一只鸡，后来支付宝也有了基金。所以后来的鸡都是在支付宝养啦。还是说说这第一只鸡，本金其实很低，那时候是银行推荐的，就随便选了一只。不过还算蛮幸运的。中间起起落落很多次，当然最揪心的就是刚刚开始就负收益，然后不懂又心慌，各种翻书找经验，得到一致建议就是坚持坚持，后来时间久了。慢慢开始没有那么关注啦。各一段时间才看看。不过总得收益还是不错的 。所以总结下来，基金定投</view>
+            <view class="topic-item-bottom">
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>                
+            </view>
+            <view class="fenge-5"></view>
+        </view>
+        <view class="topic-item">
+            <view class="topic-item-header">
+                <view class="userInfo-left">
+                    <image class="touxiang" src="../../images/shoucang-.png"></image>
+                    <view class="userInfo-left-content">
+                        <text class="userName">Metry</text>
+                        <text class="time">5个月前</text> 
+                    </view>
+                </view>
+                <view class="header-right">
+                    <image src="../../images/jing.png" class="jing"/>
+                    <image src="../../images/weiguanzhu.png" class="guanzhu"/>
+                </view>
+            </view>
+            <view class="topic-title">坚持就是胜利</view>
+            <view class="topic-content">我开始基金定投是2013年9月，那时候工作刚刚开始稳定，然后开始研究理财，首先接触的是定存和基金定投。然后去银行柜台欠了合约，那时候还要去柜台签，现在不要了。每月定投500坚持到现在，2014年底买车清零过一次，定投继续。当然这是我的第一只鸡，后来支付宝也有了基金。所以后来的鸡都是在支付宝养啦。还是说说这第一只鸡，本金其实很低，那时候是银行推荐的，就随便选了一只。不过还算蛮幸运的。中间起起落落很多次，当然最揪心的就是刚刚开始就负收益，然后不懂又心慌，各种翻书找经验，得到一致建议就是坚持坚持，后来时间久了。慢慢开始没有那么关注啦。各一段时间才看看。不过总得收益还是不错的 。所以总结下来，基金定投</view>
+            <view class="topic-item-bottom">
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>                
+            </view>
+            <view class="fenge-5"></view>
+        </view>
+        <view class="topic-item">
+            <view class="topic-item-header">
+                <view class="userInfo-left">
+                    <image class="touxiang" src="../../images/shoucang-.png"></image>
+                    <view class="userInfo-left-content">
+                        <text class="userName">Metry</text>
+                        <text class="time">5个月前</text> 
+                    </view>
+                </view>
+                <view class="header-right">
+                    <image src="../../images/jing.png" class="jing"/>
+                    <image src="../../images/weiguanzhu.png" class="guanzhu"/>
+                </view>
+            </view>
+            <view class="topic-title">坚持就是胜利</view>
+            <view class="topic-content">我开始基金定投是2013年9月，那时候工作刚刚开始稳定，然后开始研究理财，首先接触的是定存和基金定投。然后去银行柜台欠了合约，那时候还要去柜台签，现在不要了。每月定投500坚持到现在，2014年底买车清零过一次，定投继续。当然这是我的第一只鸡，后来支付宝也有了基金。所以后来的鸡都是在支付宝养啦。还是说说这第一只鸡，本金其实很低，那时候是银行推荐的，就随便选了一只。不过还算蛮幸运的。中间起起落落很多次，当然最揪心的就是刚刚开始就负收益，然后不懂又心慌，各种翻书找经验，得到一致建议就是坚持坚持，后来时间久了。慢慢开始没有那么关注啦。各一段时间才看看。不过总得收益还是不错的 。所以总结下来，基金定投</view>
+            <view class="topic-item-bottom">
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>
+                <view class="icons"><image src="../../images/shoucang-.png" class="icons-img"></image>50</view>                
+            </view>
+            <view class="fenge-5"></view>
+        </view>
+    </view>
+</view>
